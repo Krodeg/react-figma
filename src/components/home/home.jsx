@@ -4,11 +4,13 @@ import Header from '../navbar/header'
 import Hotel1 from '../../assets/home-1.png'
 import Hotel2 from '../../assets/home-2.png'
 import Buttons from '../../assets/arrow-buttons.svg'
+import Homeimg from '../../assets/hotel-1.png'
+import FooterTop from '../footer/footerTop'
 
 function Home() {
   return (
     <div>
-      <Container/>
+      <Container style={{backgroundImage: `url(${Homeimg})`}}/>
       <Header />
       
       <div className="home-container">
@@ -45,13 +47,8 @@ function Home() {
             <HotelImages src={Hotel2}/>
           </div>
         </div>
-
-        <div style={{display: "flex", flexDirection: "column", alignItems: "center", marginTop: "100px"}}>
-          <h2 style={{fontSize: "35px"}}>Testimonials</h2>
-          <p style={{fontSize: "20px", margin: "10px 0"}}>"Calm, Serene, Retro – What a way to relax and enjoy"</p>
-          <small style={{marginBottom: "10px"}}> Mr. and Mrs. Baxter, UK</small>
-          <ArrowButtons src={Buttons}/>
-        </div>
+        
+        <FooterTop/>
       </div>
     </div>
 

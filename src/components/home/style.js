@@ -1,8 +1,6 @@
 import styled from "styled-components";
-import hotel from "../../assets/hotel-1.png"
 
 export const Container = styled.div`
-    background-image: url(${hotel});
     height: 900px;
     background-position: center;
     background-repeat: no-repeat;
@@ -119,4 +117,9 @@ export const OkButton = styled.button`
     border: none;
     border-radius: 3px;
     cursor: pointer;
+`
+
+export const FacilitiesImg = styled.img`
+    width: 800px;
+    margin-bottom: 100px;
 `
