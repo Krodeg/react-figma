@@ -123,3 +123,38 @@ export const FacilitiesImg = styled.img`
     width: 800px;
     margin-bottom: 100px;
 `
+
+export const RoomsImg = styled.img`
+    width: 800px;
+`
+
+export const Description = styled.div`
+    width: 800px;
+    height: 70px;
+    background-color: #14274A;
+    color: white;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    margin-top: -5px;
+`
+
+export const RoomsIcon = styled.img`
+    height: 30px;
+    width: 30px;
+`
+
+export const RoomsButton = styled.button`
+    width: 130px;
+    height: 40px;
+    background-color: #E0B973;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+`
