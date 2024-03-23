@@ -9,12 +9,13 @@ function Navbar() {
         <ImageWrapper src={Logo}/>
         
         <div style={{display: "flex", gap: "90px"}}>
-          <Link to={"/"}><p style={{color: "white", textDecoration: "underline", fontSize: "25px"}}>Home</p></Link>
-          <Link to={"/facilities"}><p style={{color: "white", textDecoration: "underline", fontSize: "25px"}}>Facilities</p></Link>
-          <Link to={"/rooms"}><p style={{color: "white", textDecoration: "underline", fontSize: "25px"}}>Rooms</p></Link>
-          <Link to={"/contact-us"}><p style={{color: "white", textDecoration: "underline", fontSize: "25px"}}>Contact-us</p></Link>
+          <Link to={"/"} style={{textDecoration: "none"}}><p style={{color: "white", fontSize: "25px"}}>Home</p></Link>
+          <Link to={"/facilities"} style={{textDecoration: "none"}}><p style={{color: "white", fontSize: "25px"}}>Facilities</p></Link>
+          <Link to={"/rooms"} style={{textDecoration: "none"}}><p style={{color: "white", fontSize: "25px"}}>Rooms</p></Link>
+          <Link to={"/contact-us"} style={{textDecoration: "none"}}><p style={{color: "white", fontSize: "25px"}}>Contact-us</p></Link>
+          <Link to={"/login"} style={{textDecoration: "none"}}><p style={{color: "black", fontSize: "25px"}}>Login</p></Link>
         </div>
-
+      
     </div>
   )
 

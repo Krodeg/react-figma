@@ -7,12 +7,13 @@ function Header() {
   return (
     <div>
       <HeaderContainer>
-        <div className="header-left" style={{color: "white", width: "100%"}}>
+        <div className="header-left" style={{color: "white", width: "100%", marginLeft: "230px"}}>
           <h2 style={{fontSize: "50px"}}>WELCOME TO</h2>
           <h1 style={{fontSize: "154px", margin: "-40px -10px"}}>LUXURY</h1>
           <h2 style={{fontSize: "60px"}}>HOTELS</h2>
           <p style={{fontSize: "25px", marginBottom: "100px"}}>Book your stay and enjoy Luxury <br />redefined at the most affordable rates.</p>
         </div>
+
 
         <BookNow><Icon src={calendar}/> Book Now</BookNow>
 

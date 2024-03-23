@@ -21,7 +21,7 @@ export const HeaderContainer = styled.div`
     z-index: 3;
     width: 100%;
     margin-top: 100px;
-    padding: 0 250px;
+    /* padding: 0 250px; */
 
 `
 
@@ -157,4 +157,45 @@ export const RoomsButton = styled.button`
     border: none;
     border-radius: 5px;
     cursor: pointer;
+`
+
+export const ContactNavbar = styled.div`
+    height: 400px;
+    background-color: #14274A;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+
+`
+
+export const RightArrow = styled.img`
+    width: 30px;
+`
+
+export const ContactButton = styled.button`
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    background-color: #E0B973;
+    font-size: 17px;
+    cursor: pointer;
+`
+
+export const LoginButton = styled.button`
+    width: 100%;
+    height: 30px;
+    background-color: #E0B973;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    margin: 50px 0;
 `
