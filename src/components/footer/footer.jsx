@@ -4,6 +4,7 @@ import Footerlogo from '../../assets/footer-logo.png'
 import facebook from '../../assets/facebook.svg'
 import twitter from '../../assets/twitter.svg'
 import instagram from '../../assets/instagram.svg'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -18,14 +19,14 @@ function Footer() {
                 <p style={{color: "white", marginTop: "20px"}}>497 Evergreen Rd. Roseville, CA 95673 <br />+44 345 678 903 <br />luxury_hotels@gmail.com</p>
             </div>
             <div className="footer-column-2" style={{color: "white", display: "flex", flexDirection: "column", gap: "20px"}}>
-                <p>About Us</p>
-                <p>Contact</p>
-                <p>Terms & Conditions</p>
+                <Link to={"/"} style={{textDecoration: "none", color: "white"}}>About Us</Link>
+                <Link to={"/contact-us"} style={{textDecoration: "none", color: "white"}}>Contact</Link>
+                <Link to={"*"} style={{textDecoration: "none", color: "white"}}>Terms & Conditions</Link>
             </div>
             <div className="footer-column-3" style={{color: "white", display: "flex", flexDirection: "column", gap: "17px"}}>
-                <p><Icons src={facebook}/> Facebook</p>
-                <p><Icons src={twitter}/> Twitter</p>
-                <p><Icons src={instagram}/> Instagram</p>
+                <Link to={"https:facebook.com"} style={{textDecoration: "none", color: "white"}}><Icons src={facebook}/> Facebook</Link>
+                <Link to={"https:twitter.com"} style={{textDecoration: "none", color: "white"}}><Icons src={twitter}/> Twitter</Link>
+                <Link to={"https:instagram.com"} style={{textDecoration: "none", color: "white"}}><Icons src={instagram}/> Instagram</Link>
             </div>
             <div className="footer-column-4">
                 <p style={{color: "white", marginBottom: "30px"}}>Subscribe to our newsletter</p>
